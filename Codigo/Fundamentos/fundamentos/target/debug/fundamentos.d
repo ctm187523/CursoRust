@@ -1,1 +1,0 @@
-C:\Users\cleme\Documents\Rust\CursoPildorasInformaticas\Codigo\Fundamentos\fundamentos\target\debug\fundamentos.exe: C:\Users\cleme\Documents\Rust\CursoPildorasInformaticas\Codigo\Fundamentos\fundamentos\src\main.rs
