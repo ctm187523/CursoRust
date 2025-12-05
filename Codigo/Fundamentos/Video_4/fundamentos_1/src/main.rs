@@ -39,6 +39,23 @@ fn main() {
     //ESTO SOLO PASA CUANDO TRABAJAMOS CON OBJETOS, NO CON PRIMITIVOS, CON PRIMITIVOS SE COMPORTA COMO CON OTROS LENGUAJES
     //ESTO LO HACE PORQUE COMO RUST TRABAJA A NIVEL BAJO CON PUNTEROS, ETC Y DEBEMOS SABER COMO FUNCIONA LA MEMORIA
 
+    /*
+        El ownership (propiedad) es el concepto central de Rust para manejar la memoria sin garbage collector y sin fugas. Es la base del sistema de seguridad de Rust.
+        Te lo explico de forma clara y con ejemplos:
+
+        🎯 ¿Qué es el ownership?
+
+        Rust tiene tres reglas:
+
+        Cada valor tiene un único owner (dueño).
+
+        Solo puede haber un owner a la vez.
+
+        Cuando el owner sale de scope, el valor se libera automáticamente.
+
+        Esto evita fugas de memoria y condiciones de carrera sin necesidad de GC y sin free() manual
+     */
+
     //vemos el ejemplo de la explicacion anterior
     let nombre = String::from("Juan");
     let dato = nombre;
