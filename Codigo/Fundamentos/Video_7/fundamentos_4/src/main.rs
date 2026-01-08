@@ -148,8 +148,8 @@ fn main() {
        //ver (Ver imagenes video 7/String) 
     }
 
-    //comento lo de abajo porque da error ya que queremos usar r fuera del bloque, como fura del bloque s no vive
-    //ya no hay nadie que apunte a "Hola" en el heap,puntero colgante e c++ esto compilaria pero podria dar errores
+    //comento lo de abajo porque da error ya que queremos usar r fuera del bloque, como fuera del bloque s no vive
+    //ya no hay nadie que apunte a "Hola" en el heap,puntero colgante en c++ esto compilaria pero podria dar errores
     //println!("{}",r);
     
 }

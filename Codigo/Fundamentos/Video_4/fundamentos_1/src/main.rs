@@ -5,7 +5,7 @@ fn main() {
     //println!("Hello, world!");   
 
     let edad = 30;   //declaramos una variable con let, Rust tiene inferencia de datos no es necesario poner el tipo de variable al declararla por defecto un numero es i32(32 bits con signo)
-    let edad2: u8 = 25; //para tipar la variable usamos los dos puntos y el tipo de dato en estecado de 8 bits unsigned(sin signo)
+    let edad2: u8 = 25; //para tipar la variable usamos los dos puntos y el tipo de dato en este caso de 8 bits unsigned(sin signo)
 
     let mensaje = "Hola";       //String no es primitivo
 
@@ -14,7 +14,7 @@ fn main() {
     let activa=true;           //booleanos
 
     //LOS VALORES EN RUST SON INMUTABLES SI QUEREMOS CAMBIAR EL VALOR DE UNA VARIABLE NOS DA ERROR
-    //POR EJEMPLO SI HEMOS DECLARADO let edad = 30; no podemos poner edad = 50; no dara error no se puede coambiar el valor
+    //POR EJEMPLO SI HEMOS DECLARADO let edad = 30; no podemos poner edad = 50; nos dara error no se puede coambiar el valor
     //PARA TRANFORMAR UNA VARIABLE EN MUTABLE SE UTILIZA LA PALABRA RESERVADA mut, se usara mas adelante
 
     //RUST TRABAJA A UN NIVEL BAJO CON EL HARDWARE PROCESADOR Y MEMOIRA
@@ -26,7 +26,7 @@ fn main() {
     //Y USAMOS UNA VARIABLE YA CREADA EN EL EJEMPLO NOMBRE Y HACEMOS String dato=nombre; TENEMOS AHORA EN EL SATCK LAS 
     //VARIABLES NOMBRE Y DATO QUE TIENE COMO REFERENCIA EN EL HEAP EL MISMO VALOR JUAN, ESTO QUE IMPLICA QUE SI QUEREMOS
     //IMPRIMIR TANTO NOMBRE COMO DATO -> system.out.println(dato) o system.out.println(nombre) tendremos el mismo
-    //RESULTADO QUE SERA JUAN(VER EN CARPETA VIDEO 4 DE ImagenesVideos)
+    //RESULTADO QUE SERA JUAN(VER EN CARPETA VIDEO 4 DE ImagenesVideos) en JAVA
     //
     //EN RUST FUNCIONA DIFERENTE CON EL BINDING, COMO EN JAVA SI DECLARAMOS UNA VARIABLE CON LET EJ:
     //let nombre: String=String::from("Juan"); EL NOMBRE DE LA VARIABLE NOMBRE PASA AL STACK Y EL VALOR JUAN AL HEAP
@@ -53,7 +53,7 @@ fn main() {
 
         Cuando el owner sale de scope, el valor se libera automáticamente.
 
-        Esto evita fugas de memoria y condiciones de carrera sin necesidad de GC y sin free() manual
+        Esto evita fugas de memoria y condiciones de carrera sin necesidad de GC(garbage collector) y sin free() manual
      */
 
     //vemos el ejemplo de la explicacion anterior

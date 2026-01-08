@@ -1,6 +1,6 @@
 /*                                             BORROWING
   -¿Que es?
-    - Mecanismo mediante el cual uan variable permite que otra parte del programa acceda a su 
+    - Mecanismo mediante el cual una variable permite que otra parte del programa acceda a su 
       valor sin transferir la propiedad(ownership).
     
     - Rust lo hace creando una referencia a él (mutable o immutable), permitiendo leerlo o modificarlo
@@ -14,7 +14,7 @@ fn main(){
 
     let saludo=String::from("hola");
 
-    //creamos un prestamo a la variable saludo usamos el simbola &(punteros) 
+    //creamos un prestamo a la variable saludo usamos el simbolo &(punteros) 
     //referencia es un prestamo apunta a la variable saludo en el stack y la variable saludo apunta
     //al valor "hola" en el heap
     let referencia=&saludo;
@@ -24,22 +24,22 @@ fn main(){
     //para que se pueda modificar la variable dueña, saludo y la variable que recibe el prestamo referencia deben
     //tener la palabra reservada mut para hacerlas mutables.
     //comentamos la linea de abajo porque es erronea
-    //referencia.push_str("mundi cruel");
+    //referencia.push_str("mundo cruel");
 
     println!("Original: {} ",saludo);      //imprimimos el valor de la variable dueña
 
     println!("Prestamo: {} ",referencia);  //imprimimos el valor de la variable que tiene el prestamo con la variable saludo
 
     //si la variable saludo tiene un prestamo no la podemos eliminar, para evitar los punteros colgantes
-    //Rust no lo impide, comentamos las 2 lineas siguientes ya que son erroneas es para provar el
+    //Rust nos lo impide, comentamos las 2 lineas siguientes ya que son erroneas es para provar el
     //sitema de seguridad de Rust
     // std::mem::drop(saludo);
     // println!("Prestamo: {} ",referencia);
 
     println!("-----------------------------------------------------------------");
 
-    //Existen los prestamos mutables y immutables como con las variables, los immutables son pro defecto
-    let mut saludo2=String::from("hello");      //creamos una variable mutavle
+    //Existen los prestamos mutables y immutables como con las variables, los immutables son por defecto
+    let mut saludo2=String::from("hello");      //creamos una variable mutable
 
     let referencia2=&mut saludo2;          //creamos un prestamo a la variable mutable
 
@@ -56,8 +56,8 @@ fn main(){
 
     println!("Prestamo: {} ",referencia2);  //imprimimos el valor de la variable que tiene el prestamo con la variable saludo2
 
-    //si cambiamos el orden de impresion primero el valor de la variable dueña saludo2 y luego el valor de la variable
-    //que toma prestado de variable2(referencia2), ya no tenemos error, porque la variable que toma prestada la variable
+    //si cambiamos el orden de impresion primero el valor de la variable con prestamo referencia2 y luego el valor de la variable
+    //dueña saludo2, ya no tenemos error, porque la variable que toma prestada la variable
     //saludo2(referencia2) una vez se imprime deja de usarse en el resto del programa, el ciclo de vida de prestamo2 termina
     //con lo cual ahora si podemos acceder a la variable dueña saludo2
 

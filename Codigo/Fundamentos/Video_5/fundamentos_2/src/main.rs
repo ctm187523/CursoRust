@@ -133,7 +133,7 @@ fn main() {
 }
 
 fn cualquiera(){
-     println!("Estoy en la función cualquiera {}", SALUDO);   //podemos usar la constante SALUDO ya que es generañ
+     println!("Estoy en la función cualquiera {}", SALUDO);   //podemos usar la constante SALUDO creada arriba
 }
 
 
