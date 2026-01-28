@@ -38,7 +38,7 @@ fn main(){
 
     println!("-----------------------------------------------------------------");
 
-    //Existen los prestamos mutables y immutables como con las variables, los immutables son por defecto
+    //Existen los prestamos mutables y immutables como con las variables, los inmutables son por defecto
     let mut saludo2=String::from("hello");      //creamos una variable mutable
 
     let referencia2=&mut saludo2;          //creamos un prestamo a la variable mutable
