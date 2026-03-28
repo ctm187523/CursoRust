@@ -36,7 +36,7 @@ fn main() {
         println!("{} ", n);
     }
 
-    //lo de abajo da error, lo comentamos ya no podemos acceder al vector, si o lo hubieramos iterado con el for
+    //lo de abajo da error, lo comentamos ya no podemos acceder al vector, si no lo hubieramos iterado con el for
     //anterior no dario error, es por tema de dueño de la variable aerriba en ->  let numeros = vec![1,2,3];
     //el vector numeros es el dueño de los datos que contiene, al iterar con el for n es una variable que toma el valor de cada elemeto del vector
     //en el bucle for se crea un iterador que va tomando cada elemento del vector y se lo asigna a n
